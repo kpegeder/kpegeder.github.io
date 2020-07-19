@@ -11,14 +11,6 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <style>
-      .my-style {
-        border: solid 1px red;
-      }
-      .my-style1 {
-        border: solid 1px blue;
-      }
-    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,7 +26,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="my-style collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-md-auto">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">About </a>
@@ -48,47 +40,56 @@
         </ul>
       </div>
     </nav>
-    <main class="my-style container">
+    <main class="container">
       <div class="row">
-        <div class="my-style col-md-12">
+        <div class="col-md-12">
           <h2>Portfolio</h2>
         </div>
-        <div class="dropdown-divider"></div>
+      </div>
+      <div class="dropdown-divider"></div>
+      <div class="row">
+        <div class="col-md-6 img-tag">
+          <a href="https://www.google.com" target="_blank">
+            <!-- change alt tag and file name-->
+            <img
+              id="portfolio-image"
+              src="images/mclake-min.jpeg"
+              alt="Kalen's Portrait Picture"
+              class="rounded mx-auto d-block"
+          /></a>
+          <div class="centered">GitHub</div>
+        </div>
+        <div class="col-md-6 img-tag">
+          <!-- change alt tag and file name-->
+          <img
+            id="portfolio-image"
+            src="images/casey-min.jpeg"
+            alt="Kalen's Portrait Picture"
+            class="rounded mx-auto d-block"
+          />
+          <div class="centered">GitHub</div>
+        </div>
       </div>
       <div class="row">
-        <div class="my-style col-md-6">
+        <div class="col-md-6 img-tag">
+          <!-- change alt tag and file name -->
           <img
-            id="bio-image"
-            src="images/mclake-min.jpeg"
-            alt="Kalen's Portrait Picture"
-            class="img-thumbnail align-self-center mr-3"
-          />
-        </div>
-        <div class="my-style col-md-6">
-          <img
-            id="bio-image"
-            src="images/mcriver-min.jpeg"
-            alt="Kalen's Portrait Picture"
-            class="img-thumbnail align-self-center mr-3"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="my-style col-md-6">
-          <img
-            id="bio-image"
+            id="portfolio-image"
             src="images/mcrocks-min.jpeg"
             alt="Kalen's Portrait Picture"
-            class="img-thumbnail align-self-center mr-3"
+            class="rounded mx-auto d-block"
           />
+          <div class="centered">GitHub</div>
         </div>
-        <div class="my-style col-md-6">
+        <div class="col-md-6 img-tag">
+          <!-- change alt tag and file name-->
           <img
-            id="bio-image"
+            id="portfolio-image"
             src="images/moose-min.jpeg"
             alt="Kalen's Portrait Picture"
-            class="img-thumbnail align-self-center mr-3"
+            class="rounded mx-auto d-block"
           />
+          <div class="centered">GitHub</div>
         </div>
       </div>
     </main>

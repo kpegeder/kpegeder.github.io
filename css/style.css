@@ -66,3 +66,22 @@ ul {
   width: 200px;
   float: left;
 }
+
+#portfolio-image {
+  width: 200px;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  text-align: center;
+  background-color: #3282b8;
+  color: #bbe1fa;
+}
+
+.img-tag {
+  margin-bottom: 10px;
+}
