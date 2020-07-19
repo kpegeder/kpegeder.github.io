@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
   <head>
     <meta charset="UTF-8" />
+    <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link
@@ -10,11 +11,18 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <title>Hello!!!</title>
+    <style>
+      .my-style {
+        border: solid 1px red;
+      }
+      .my-style1 {
+        border: solid 1px blue;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <h1>Kalen Pegeder</h1>
+      <h1 class="my-style1">Kalen Pegeder</h1>
       <button
         class="navbar-toggler"
         type="button"
@@ -40,34 +48,47 @@
         </ul>
       </div>
     </nav>
-    <main class="container">
-      <section id="main-bio">
-        <h2>About Me</h2>
-        <div class="dropdown-divider"></div>
-        <img
-          id="bio-image"
-          src="images/portrait.jpeg"
-          alt="Kalen's Portrait Picture"
-          class="img-thumbnail align-self-center mr-3"
-        />
-        <p>
-          Growing up, my favorite subject in school had to have been math. For
-          me, math was logical with a right or wrong answer. As I started to
-          take harder math classes, I viewed math as a puzzle. I enjoy seeing a
-          problem and thinking about ways to fix them. It wasn’t until I was in
-          college at Oregon State University that I learned coding. While I was
-          in college, I always enjoyed when we had problems which required
-          coding. Since graduation, I have found a passion for helping others
-          learn or improve their knowledge. I have worked as a ski instructor
-          predominating working with young children (3.5-5 yrs.), coached soccer
-          to kids (8-10 yrs.), and tutor math at a community college. Now, it’s
-          time for me to reset and think about what I like doing. It has led me
-          to self-teaching myself how to coding a different language than
-          college. In my spare time, I enjoy doing outdoor activities such as
-          soccer, ultimate frisbee, skiing, and hiking. When I’m not outdoors,
-          you’ll find me learning coding and listening to music.
-        </p>
-      </section>
+    <main class="my-style container">
+      <div class="row">
+        <div class="my-style col-md-12">
+          <h2>Contact</h2>
+        </div>
+      </div>
+      <div class="dropdown-divider"></div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="First and Last Name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="Message">Message</label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="4"
+          ></textarea>
+        </div>
+
+        <div class="col-auto my-1">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
     </main>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

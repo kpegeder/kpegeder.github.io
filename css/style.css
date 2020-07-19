@@ -1,5 +1,5 @@
 body {
-  background-color: #efeee7;
+  background-color: #3282b8 !important;
   margin: 0;
   padding: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -9,13 +9,16 @@ body {
 header {
   background-color: #333333;
   margin: 0;
-  padding: 10px;
+  justify-content: space-between;
 }
 
 h1 {
   color: #eee;
   font-size: 28px;
-  text-align: center;
+  text-align: left;
+  padding: 10px;
+  margin-left: 15px;
+  width: fit-content;
 }
 
 h2 {
@@ -38,24 +41,28 @@ p {
   margin-left: 25px;
 }
 
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
 .container {
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 10px;
   line-height: 1.5;
+  background-color: #bbe1fa;
 }
 
-#main-bio {
-  float: left;
-  width: 70%;
-}
-
-#contact-info {
-  float: left;
-  width: 30%;
+.dropdown-divider {
+  border-top: 2px solid #0f4c75 !important;
 }
 
 #bio-image {
-  float: left;
   width: 200px;
-  margin: 25px;
+  float: left;
 }
