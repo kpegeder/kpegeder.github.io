@@ -6,33 +6,25 @@ body {
   color: #333333;
 }
 
-header {
+nav {
   background-color: #1b262c;
-  /* margin: 0; */
-  justify-content: space-between;
 }
 
 h1 {
   color: #eee;
-  font-size: 28px;
+  font-size: 2.5rem;
   text-align: left;
   padding: 0px;
   margin-left: 15px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2rem;
   text-align: left;
   margin: 25px;
 }
 
-h3 {
-  font-size: 20px;
-  text-align: left;
-  margin: 25px;
-}
-
-p {
+.about-me {
   margin-left: 14px;
 }
 
@@ -53,7 +45,7 @@ p {
   margin: 8px 14px;
 }
 
-.bio-image {
+#bio-image {
   width: 200px;
   float: left;
 }
@@ -62,16 +54,14 @@ p {
   width: 200px;
 }
 
-.centered {
+.center-text {
   position: absolute;
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
   text-align: center;
-  /* background-color: #3282b8; */
   background-color: #364e68;
-  /* color: #bbe1fa; */
   color: #deecfc;
 }
 
@@ -84,15 +74,16 @@ p {
 }
 
 .job-icon {
-  font-size: 36px;
+  font-size: 2rem;
   text-align: center;
 }
 
-.footer {
-  font-size: 20px;
+.sticky-footer {
+  font-size: 1.2rem;
   text-align: center;
   background-color: #1b262c;
   bottom: 0;
   position: fixed;
   width: 100%;
+  color: #6c757d;
 }
