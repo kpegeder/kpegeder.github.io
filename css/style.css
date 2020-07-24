@@ -10,6 +10,10 @@ nav {
   background-color: #1b262c;
 }
 
+article {
+  margin-bottom: 80px !important;
+}
+
 h1 {
   color: #eee;
   font-size: 2.5rem;
@@ -34,9 +38,7 @@ h2 {
   line-height: 1.5;
   background-color: #bbe1fa;
 }
-article {
-  margin-bottom: 80px !important;
-}
+
 .dropdown-divider {
   border-top: 2px solid #0f4c75 !important;
 }
