@@ -2,6 +2,8 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -17,11 +19,6 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-    <style>
-      .my-style {
-        border: solid 1px red;
-      }
-    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -39,10 +36,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-md-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">About </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
@@ -51,7 +48,7 @@
         </ul>
       </div>
     </nav>
-    <main class="container">
+    <article class="container">
       <div class="row">
         <div class="col-md-12">
           <h2>Portfolio</h2>
@@ -65,20 +62,18 @@
             target="_blank"
           >
             <img
-              id="portfolio-image"
               src="images/mclake-min.jpeg"
               alt="Two dog sitting by a lake"
-              class="rounded mx-auto d-block"
+              class="rounded mx-auto d-block portfolio-image"
           /></a>
           <div class="center-text">Homework 1</div>
         </div>
         <div class="col-md-6 img-tag">
           <a href="https://kpegeder.github.io/">
             <img
-              id="portfolio-image"
               src="images/casey-min.jpeg"
               alt="Red heeler in between two rock formation on top of a mountain"
-              class="rounded mx-auto d-block"
+              class="rounded mx-auto d-block portfolio-image"
           /></a>
           <div class="center-text">Homework 2</div>
         </div>
@@ -90,25 +85,23 @@
             target="_blank"
           >
             <img
-              id="portfolio-image"
               src="images/mcrocks-min.jpeg"
               alt="Two dogs stading in front of a rock formation"
-              class="rounded mx-auto d-block"
+              class="rounded mx-auto d-block portfolio-image"
           /></a>
           <div class="center-text">Prework About Me</div>
         </div>
         <div class="col-md-6 img-tag">
           <a href="https://www.instagram.com/mooseinmontana/" target="_blank">
             <img
-              id="portfolio-image"
               src="images/moose-min.jpeg"
               alt="Poodle in between two rock formation on top of a mountain"
-              class="rounded mx-auto d-block"
+              class="rounded mx-auto d-block portfolio-image"
           /></a>
           <div class="center-text">Moose Instagram</div>
         </div>
       </div>
-    </main>
+    </article>
     <footer class="sticky-footer mt-auto py-3">
       <div class="container-fluid">
         <i class="fas fa-skiing"></i> Made by Kalen
