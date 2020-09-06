@@ -37,6 +37,7 @@ h2 {
   padding: 10px;
   line-height: 1.5;
   background-color: #bbe1fa;
+  border-radius: 10px;
 }
 
 .dropdown-divider {
@@ -63,7 +64,7 @@ h2 {
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
+  width: 150px;
   text-align: center;
   background-color: #364e68;
   color: #deecfc;
@@ -90,4 +91,9 @@ h2 {
   position: fixed;
   width: 100%;
   color: #6c757d;
+}
+
+.demoImg {
+  width: 150px;
+  height: 150px;
 }
