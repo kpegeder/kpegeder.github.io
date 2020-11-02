@@ -97,3 +97,12 @@ h2 {
   width: 150px;
   height: 150px;
 }
+
+.card {
+  width: 15rem;
+  margin: 1.1rem;
+}
+
+.row {
+  justify-content: space-between;
+}
