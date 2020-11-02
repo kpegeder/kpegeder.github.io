@@ -93,11 +93,6 @@ h2 {
   color: #6c757d;
 }
 
-.demoImg {
-  width: 150px;
-  height: 150px;
-}
-
 .card {
   width: 15rem;
   margin: 1.1rem;
@@ -105,4 +100,8 @@ h2 {
 
 .row {
   justify-content: space-between;
+}
+
+i {
+  font-size: 1.2rem;
 }
