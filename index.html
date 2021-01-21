@@ -1,150 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="assests/css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
     <title>Kalen Pegeder</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/linericon/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="vendors/animate-css/animate.css" />
+    <link rel="stylesheet" href="vendors/popup/magnific-popup.css" />
+    <link rel="stylesheet" href="vendors/flaticon/flaticon.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <h1>Kalen Pegeder</h1>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-md-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">About </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="assets/images/Resume-2020-Bootcamp.pdf"
-              target="_blank"
-              >Resume</a
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container box_1620">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand logo_h" href="index.html"
+              ><img src="img/logo.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <article class="container">
-      <section id="main-bio">
-        <h2>About Me</h2>
-        <div class="dropdown-divider"></div>
-
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="assets/images/portrait.jpeg"
-                class="d-block bio-image"
-                alt="Kalen's head shot with dark background"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/images/portait2.jpeg"
-                class="d-block bio-image"
-                alt="Kalen's head shot outside"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/images/portait3.jpeg"
-                class="d-block bio-image"
-                alt="Kalen's head shot with a hat on"
-              />
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav menu_nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleControls"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleControls"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </a>
+        </nav>
+      </div>
+    </header>
+    <!--================Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="home_banner_area">
+      <div class="container box_1620">
+        <div class="banner_inner d-flex align-items-center">
+          <div class="banner_content">
+            <div class="media">
+              <div class="d-flex">
+                <img src="img/portrait.jpeg" alt="Portrait" />
+              </div>
+              <div class="media-body">
+                <div class="personal_text">
+                  <h6>Hello Everybody, i am</h6>
+                  <h3>Kalen Pegeder</h3>
+                  <h4>Web Developer</h4>
+                  <p>Add a sentence</p>
+                  <ul class="list basic_info">
+                    <li>
+                      <a href="tel:3605923353">
+                        <i class="lnr lnr-phone-handset"></i>
+                        (360) 592 3353</a
+                      >
+                    </li>
+                    <li>
+                      <a href="mailto:k.pegeder@gmail.com"
+                        ><i class="lnr lnr-envelope"></i> k.pegeder@gmail.com</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.google.com/maps/@48.7532908,-122.5313496,11z"
+                        target="_blank"
+                        ><i class="lnr lnr-home"></i> Bellingham, WA</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="list personal_social">
+                    <li>
+                      <a href="https://github.com/kpegeder"
+                        ><i class="fa fa-github" style="font-size: 20px"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/kalenpegeder/"
+                        ><i class="fa fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="about-me">
-          Growing up, my favorite subject in school had to have been math. For
-          me, math was logical with a right or wrong answer. As I started to
-          take harder math classes, I viewed math as a puzzle. I enjoy seeing a
-          problem and thinking about ways to fix them. It wasn’t until I was in
-          college at Oregon State University that I learned coding. While I was
-          in college, I always enjoyed when we had problems which required
-          coding. Since graduation, I have found a passion for helping others
-          learn or improve their knowledge. I have worked as a ski instructor
-          predominating working with young children (3.5-5 yrs.), coached soccer
-          to kids (8-10 yrs.), and tutor math at a community college. Now, it’s
-          time for me to reset and think about what I like doing. It has led me
-          to self-teaching myself how to coding a different language than
-          college. In my spare time, I enjoy doing outdoor activities such as
-          soccer, ultimate frisbee, skiing, and hiking. When I’m not outdoors,
-          you’ll find me learning coding and listening to music.
-        </p>
-      </section>
-    </article>
-    <footer class="sticky-footer mt-auto py-3">
-      <div class="container-fluid">
-        <i class="fas fa-skiing"></i> Made by Kalen
-        <i class="far fa-futbol"></i>
+      </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================Welcome Area =================-->
+    <section class="welcome_area p_100">
+      <div class="container">
+        <div class="row welcome_inner">
+          <div class="col-lg-6">
+            <div class="welcome_text">
+              <h4>About Myself</h4>
+              <p>Write something about myself</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tools_expert">
+              <div class="skill_main">
+                <div class="skill_item">
+                  <h4>Add Skills <span class="counter">85</span>%</h4>
+                  <div class="progress_br">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Welcome Area =================-->
+
+    <!--================My Tabs Area =================-->
+    <section class="mytabs_area p_100">
+      <div class="container">
+        <div class="tabs_inner">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="home-tab"
+                data-toggle="tab"
+                href="#home"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                >My Experiences</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#profile"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                >My Education</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <ul class="list">
+                <li>
+                  <span></span>
+                  <div class="media">
+                    <div class="d-flex col-sm-6">
+                      <p>April 2017 to Sept 2020</p>
+                    </div>
+                    <div class="media-body col-sm-6">
+                      <h4>Central Oregon Community College</h4>
+                      <p>Math Tutor <br />Bend, OR</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <span></span>
+                  <div class="media">
+                    <div class="d-flex col-sm-6">
+                      <p>Dec 2017 to March 2020</p>
+                    </div>
+                    <div class="media-body col-sm-6">
+                      <h4>Mt. Bachelor</h4>
+                      <p>Ski Instructore <br />Bend, OR</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <ul class="list">
+                <li>
+                  <span></span>
+                  <div class="media">
+                    <div class="d-flex col-sm-6">
+                      <p>July 2020 to Jan 2021</p>
+                    </div>
+                    <div class="media-body col-sm-6">
+                      <h4>University of Oregon</h4>
+                      <p>Web Development <br />Portland, OR</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <span></span>
+                  <div class="media">
+                    <div class="d-flex col-sm-6">
+                      <p>Sept 2014 to June 2017</p>
+                    </div>
+                    <div class="media-body col-sm-6">
+                      <h4>Oregon State University</h4>
+                      <p>Mechanical Engineering <br />Corvallis, OR</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End My Tabs Area =================-->
+
+    <!--================Home Gallery Area =================-->
+    <section class="home_gallery_area p_100">
+      <div class="container">
+        <div class="main_title">
+          <h2>My Featured Projects</h2>
+          <p>Add a sentence</p>
+        </div>
+        <div class="isotope_fillter">
+          <ul class="gallery_filter list">
+            <li class="active" data-filter="*"><a href="#">All</a></li>
+            <li data-filter=".react"><a href="#">MERN</a></li>
+            <li data-filter=".sql"><a href="#">MySQL</a></li>
+            <li data-filter=".handlebars"><a href="#">Handlebars</a></li>
+            <li data-filter=".api"><a href="#">3rd Party APIs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="gallery_f_inner row imageGallery1">
+          <div class="col-lg-4 col-md-4 col-sm-6 react api">
+            <div class="h_gallery_item">
+              <div class="g_img_item">
+                <img
+                  class="img-fluid"
+                  src="img/projects/weekend-getaway.png"
+                  alt=""
+                />
+                <a class="light" href="img/projects/weekend-getaway.png"
+                  ><img src="img/gallery/icon.png" alt=""
+                /></a>
+              </div>
+              <div class="g_item_text">
+                <h4>Creative Poster Design</h4>
+                <p>Client Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 sql handlebars api">
+            <div class="h_gallery_item">
+              <div class="g_img_item">
+                <img
+                  class="img-fluid"
+                  src="img/projects/film-connector.png"
+                  alt=""
+                />
+                <a class="light" href="img/projects/film-connector.png"
+                  ><img src="img/gallery/icon.png" alt=""
+                /></a>
+              </div>
+              <div class="g_item_text">
+                <h4>Film Connector</h4>
+                <p>Client Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 api">
+            <div class="h_gallery_item">
+              <div class="g_img_item">
+                <img class="img-fluid" src="img/projects/air-walk.png" alt="" />
+                <a class="light" href="img/projects/air-walk.png"
+                  ><img src="img/gallery/icon.png" alt=""
+                /></a>
+              </div>
+              <div class="g_item_text">
+                <h4>AirWalk</h4>
+                <p>Client Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 handlebars">
+            <div class="h_gallery_item">
+              <div class="g_img_item">
+                <img class="img-fluid" src="img/projects/burgers.png" alt="" />
+                <a class="light" href="img/projects/burgers.png"
+                  ><img src="img/gallery/icon.png" alt=""
+                /></a>
+              </div>
+              <div class="g_item_text">
+                <h4>Eat a Burger!</h4>
+                <p>Client Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 react api">
+            <div class="h_gallery_item">
+              <div class="g_img_item">
+                <img
+                  class="img-fluid"
+                  src="img/projects/google-books.png"
+                  alt=""
+                />
+                <a class="light" href="img/projects/google-books.png"
+                  ><img src="img/gallery/icon.png" alt=""
+                /></a>
+              </div>
+              <div class="g_item_text">
+                <h4>Google Books</h4>
+                <p>Client Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 react">
+            <div class="h_gallery_item">
+              <div class="g_img_item">
+                <img class="img-fluid" src="img/projects/wedding.png" alt="" />
+                <a class="light" href="img/projects/wedding.png"
+                  ><img src="img/gallery/icon.png" alt=""
+                /></a>
+              </div>
+              <div class="g_item_text">
+                <h4>Wedding Website</h4>
+                <p>Client Project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more_btn">
+          <a class="main_btn" href="portfolio.html">Visit My Portfolio</a>
+        </div>
+      </div>
+    </section>
+    <!--================End Home Gallery Area =================-->
+
+    <!--================Footer Area =================-->
+    <footer class="footer_area p_20">
+      <div class="container">
+        <div class="row footer_inner">
+          <div class="col-lg-12 col-sm-12" style="text-align: center">
+            <aside class="f_widget ab_widget">
+              <div class="f_title">
+                <h3>About Me</h3>
+              </div>
+              <p>Add in quote</p>
+            </aside>
+            <div class="f_widget social_widget">
+              <div class="f_title">
+                <h3>Follow Me</h3>
+              </div>
+              <p>Let us be social</p>
+              <ul class="list">
+                <li>
+                  <a href="mailto:k.pegeder@gmail.com"
+                    ><i class="fa fa-envelope fa-lg"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="tel:3605923353">
+                    <i class="fa fa-phone fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/kalenpegeder/"
+                    ><i class="fa fa-linkedin fa-lg"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/kpegeder"
+                    ><i class="fa fa-github fa-lg"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+    <!--================End Footer Area =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/theme.js"></script>
   </body>
 </html>
