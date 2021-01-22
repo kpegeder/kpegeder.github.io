@@ -8,6 +8,7 @@ $(document).ready(function () {
   // form submit event
   form.on("submit", function (e) {
     e.preventDefault(); // prevent default form submit
+    console.log("hi");
 
     $.ajax({
       url: "mail.php", // form action url
