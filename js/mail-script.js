@@ -1,47 +1,73 @@
 // -------   Mail Send ajax
 
 $(document).ready(function () {
-  var form = $("#myForm"); // contact form
-  var submit = $(".submit-btn"); // submit button
-  var alert = $(".alert-msg"); // alert div for show alert message
+  (function ($) {
+    "use strict";
 
-  // // form submit event
-  // form.on("submit", function (e) {
-  //   e.preventDefault(); // prevent default form submit
-  //   console.log("hi");
+    jQuery.validator.addMethod(
+      "answercheck",
+      function (value, element) {
+        return this.optional(element) || /^\bcat\b$/.test(value);
+      },
+      "type the correct answer -_-"
+    );
 
-  //   $.ajax({
-  //     url: "mail.php", // form action url
-  //     type: "POST", // form submit method get/post
-  //     dataType: "html", // request type html/json/xml
-  //     data: form.serialize(), // serialize form data
-  //     beforeSend: function () {
-  //       alert.fadeOut();
-  //       submit.html("Sending...."); // change submit button text
-  //     },
-  //     success: function (data) {
-  //       alert.html(data).fadeIn(); // fade in response data
-  //       form.trigger("reset"); // reset form
-  //       submit.attr("style", "display: none !important"); // reset submit button text
-  //     },
-  //     error: function (e) {
-  //       console.log(e);
-  //     },
-  //   });
-  // });
+    // validate contactForm form
+    $(function () {
+      $("#contactForm").validate({
+        rules: {
+          name: {
+            required: true,
+            minlength: 2,
+          },
+          subject: {
+            required: true,
+            minlength: 4,
+          },
+          number: {
+            required: true,
+            minlength: 5,
+          },
+          email: {
+            required: true,
+            email: true,
+          },
+          message: {
+            required: true,
+            minlength: 20,
+          },
+        },
+        messages: {
+          name: {
+            required: "come on, you have a name, don't you?",
+            minlength: "your name must consist of at least 2 characters",
+          },
+          subject: {
+            required: "come on, you have a subject, don't you?",
+            minlength: "your subject must consist of at least 4 characters",
+          },
+          number: {
+            required: "come on, you have a number, don't you?",
+            minlength: "your Number must consist of at least 5 characters",
+          },
+          email: {
+            required: "no email, no message",
+          },
+          message: {
+            required:
+              "um...yea, you have to write something to send this form.",
+            minlength: "thats all? really?",
+          },
+        },
+      });
+    });
+  })(jQuery);
+
   function validEmail(email) {
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return re.test(email);
   }
-  function validateHuman(honeypot) {
-    if (honeypot) {
-      //if hidden form filled up
-      console.log("Robot Detected!");
-      return true;
-    } else {
-      console.log("Welcome Human!");
-    }
-  }
+
   // get all data in form and return object
   function getFormData(form) {
     var elements = form.elements;
@@ -51,7 +77,6 @@ $(document).ready(function () {
         return elements[k].name !== "honeypot";
       })
       .map(function (k) {
-        console.log(k);
         if (elements[k].name !== undefined) {
           return elements[k].name;
           // special case for Edge's html collection
@@ -60,7 +85,6 @@ $(document).ready(function () {
         }
       })
       .filter(function (item, pos, self) {
-        console.log(item, pos, self);
         return self.indexOf(item) == pos && item;
       });
     var formData = {};

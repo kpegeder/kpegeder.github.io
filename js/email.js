@@ -21,7 +21,7 @@
         return elements[k].name !== "honeypot";
       })
       .map(function (k) {
-        console.log(k);
+        // console.log(k);
         if (elements[k].name !== undefined) {
           return elements[k].name;
           // special case for Edge's html collection
@@ -30,7 +30,7 @@
         }
       })
       .filter(function (item, pos, self) {
-        console.log(item, pos, self);
+        // console.log(item, pos, self);
         return self.indexOf(item) == pos && item;
       });
     var formData = {};
@@ -80,11 +80,7 @@
       var xhr = new XMLHttpRequest();
       xhr.open("POST", url);
       // xhr.withCredentials = true;
-      xhr.setRequestHeader(
-        "Content-Type",
-        "application/x-www-form-urlencoded",
-        "Access-Control-Allow-Origin"
-      );
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.onreadystatechange = function () {
         console.log(xhr.status, xhr.statusText);
         console.log(xhr.responseText);
