@@ -1,6 +1,6 @@
 // -------   Mail Send ajax
 
-$(document).ready(function () {
+(function () {
   (function ($) {
     "use strict";
 

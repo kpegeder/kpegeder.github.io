@@ -116,11 +116,10 @@
           </div>
           <div class="col-lg-9">
             <form
-              class="row contact_form"
+              class="gform pure-form pure-form-stacked row contact_form"
               action="https://script.google.com/macros/s/AKfycby8fqn71jLHLlmJi0HAhwP8thOF0ub4ErReQ2qH/exec"
-              method="post"
+              method="POST"
               id="contactForm"
-              novalidate="novalidate"
               data-email="k.pegeder@gmail.com"
             >
               <div class="col-md-6">
@@ -131,6 +130,7 @@
                     id="name"
                     name="name"
                     placeholder="Enter your name"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -140,6 +140,7 @@
                     id="email"
                     name="email"
                     placeholder="Enter email address"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -149,6 +150,7 @@
                     id="subject"
                     name="subject"
                     placeholder="Enter Subject"
+                    required
                   />
                 </div>
               </div>
@@ -160,13 +162,18 @@
                     id="message"
                     rows="1"
                     placeholder="Enter Message"
+                    required
                   ></textarea>
                 </div>
               </div>
               <div class="col-md-12 text-right">
-                <button type="submit" value="submit" class="btn submit_btn">
+                <button class="btn">
+                  <!-- submit_btn type="submit" value="submit" -->
                   Send Message
                 </button>
+                <div class="thankyou_message" style="display: none">
+                  <h5>Message sent!</h5>
+                </div>
               </div>
             </form>
           </div>
@@ -275,12 +282,12 @@
     <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/mail-script.js"></script>
+    <script src="js/email.js"></script>
     <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
     <script src="vendors/counter-up/jquery.counterup.min.js"></script>
     <!-- contact js -->
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
+    <!-- <script src="js/jquery.form.js"></script> -->
+    <!-- <script src="js/jquery.validate.min.js"></script> -->
     <!-- <script src="js/contact.js"></script> -->
     <script src="js/theme.js"></script>
     <!-- <script src="js/email.js"></script> -->
