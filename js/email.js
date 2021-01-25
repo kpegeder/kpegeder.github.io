@@ -3,15 +3,15 @@
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return re.test(email);
   }
-  function validateHuman(honeypot) {
-    if (honeypot) {
-      //if hidden form filled up
-      console.log("Robot Detected!");
-      return true;
-    } else {
-      console.log("Welcome Human!");
-    }
-  }
+  // function validateHuman(honeypot) {
+  //   if (honeypot) {
+  //     //if hidden form filled up
+  //     console.log("Robot Detected!");
+  //     return true;
+  //   } else {
+  //     console.log("Welcome Human!");
+  //   }
+  // }
   // get all data in form and return object
   function getFormData(form) {
     var elements = form.elements;
@@ -21,7 +21,6 @@
         return elements[k].name !== "honeypot";
       })
       .map(function (k) {
-        // console.log(k);
         if (elements[k].name !== undefined) {
           return elements[k].name;
           // special case for Edge's html collection
@@ -30,7 +29,6 @@
         }
       })
       .filter(function (item, pos, self) {
-        // console.log(item, pos, self);
         return self.indexOf(item) == pos && item;
       });
     var formData = {};
@@ -54,7 +52,6 @@
     formData.formDataNameOrder = JSON.stringify(fields);
     formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
     formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
-    console.log(formData);
     return formData;
   }
   function handleFormSubmit(event) {
@@ -82,8 +79,6 @@
       // xhr.withCredentials = true;
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.onreadystatechange = function () {
-        console.log(xhr.status, xhr.statusText);
-        console.log(xhr.responseText);
         var formElements = form.querySelector(".form-elements");
         if (formElements) {
           formElements.style.display = "none"; // hide form
