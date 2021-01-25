@@ -1,6 +1,6 @@
 $(document).ready(function () {
   const loadMore = document.getElementById("load-more-projects");
-  console.log($(".h_gallery_item"));
+  // console.log($(".h_gallery_item"));
   $(".h_gallery_item").slice(0, 6).slideDown();
   loadMore.addEventListener("click", function (e) {
     e.preventDefault();
